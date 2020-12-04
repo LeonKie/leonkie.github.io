@@ -1,10 +1,10 @@
 ---
-title: "InverterdPendelum"
+title: "Inverterd Pendulum"
 date: 2020-08-31T23:38:56+02:00
 draft: false
 featuredImagePreview: "IMG_20200830_182322.jpg"
 categories: [arduino, feedback control theory]
-tags: [electronics, dc motor, L298n, lamp]
+tags: [electronics, dc-motor, L298n, lamp]
 math: 
  enable: true
 ---
@@ -13,11 +13,11 @@ math:
 
 ## Introduction
 
-The inverted pendulum is one of the most popular demonstrations in system control, has been studied since the 1960[^1] and prime example at unis and other reseach institutes. However the inverted pendulum, which is nothing more than a pendulum that has the center of mass above the pivot point, yet has not particular use case. To change this once in for all, I build a **inverted pendulum lamp**, which can be used as a normal stylsh desk lanmp. *(The main incentive however wasn't so heroic. Honestly! It sounded just like a nice project idea!)* 
+The inverted pendulum is one of the most popular demonstrations in system control, has been studied since the 1960[^1] and prime example at unis and other research institutes. However, the inverted pendulum, which is nothing more than a pendulum that has the centre of mass above the pivot point, yet has no particular use case. To change this once in for all, I build an **inverted pendulum lamp**, which can be used as a normal stylish desk lamp. *(The main incentive, however, wasn't so heroic. Honestly! It sounded just like a nice project idea!)* 
 
 {{< admonition type=note title="Note" >}}
 
-This blog post will give you a step by step **recreation guide** and highlights the the design choices I made as well as introduce you to the implementation of the **LQR Control Algorithm** I used to balance the Lamp. I will also mention the resources that i used to speed up the programming part at the the end of the post!
+This blog post will give you a step by step **recreation guide** and highlights the design choices I made as well as introduce you to the implementation of the **LQR Control Algorithm** I used to balance the Lamp. I will also mention the resources that I used to speed up the programming part at the end of the post!
 
 {{< /admonition>}}
 ## Building
@@ -40,38 +40,37 @@ This blog post will give you a step by step **recreation guide** and highlights 
 
 
 ### Mechanical Setup
-To accomplish this symbiosis between this still highly complex balancing problem and the potential usage as a design element, I first had to desing a balancing cart 🚗 with a pivoting E27 socket for the lamp 💡. This brings the extra challenge of feeding a, in this case 230V, cable throw various mountings and controlling it using a ordinary relay.
-
+To accomplish this symbiosis between this still highly complex balancing problem and the potential usage as a design element, I first had to design a balancing cart 🚗 with a pivoting E27 socket for the lamp 💡. This brings the extra challenge of feeding a, in this case, 230V, cable throw various mountings and controlling it using an ordinary relay.
 {{<figure src= "IMG_20200830_182322.jpg">}}
 
 {{<admonition type=tip title="Design-choices">}}
 
 ### ⚙️ DV-Motor (first axel)
-  - the L298N Motor Driver Module works up to 12V , without removing the jumper wire, therefore a 12V DV-Motor is a good choice for the setup
-  - a DC-Motor with 300-440 RPM or with a 15:1 gear ratio and a high enought torque, 10Ncm in my case (but that much might not be necessary) was sufficient for my setup
-  - ❗ be carefull with the maximum current! The allowed Amps for the L298N Motor Driver Module is 2A (more information [here](https://components101.com/modules/l293n-motor-driver-module#:~:text=Driver%20Chip%3A%20Double%20H%20Bridge,Logic%20Voltage%3A%205V))
+  - the L298N Motor Driver Module works up to 12V, without removing the jumper wire, therefore a 12V DV-Motor is a good choice for the setup
+  - a DC-Motor with 300-440 RPM or with a 15:1 gear ratio and a high enough torque, 10Ncm in my case (but that much might not be necessary) was sufficient for my setup
+  - ❗ be careful with the maximum current! The allowed Amps for the L298N Motor Driver Module is 2A (more information [here](https://components101.com/modules/l293n-motor-driver-module#:~:text=Driver%20Chip%3A%20Double%20H%20Bridge,Logic%20Voltage%3A%205V))
 
 ### 📏 Contious Angle Sensor (second axel)
   - is used to monitor the position of the cart 🚗 relative to its starting position
-  - the angle sensor works like a normal potentiometer but allows for more that 360° turning angle.
+  - the angle sensor works like a normal potentiometer but allows for more than 360° turning angle.
   - not the most reliable solution as it produced high noise in the zero orientation <br> => **Quick-fix:** use a capacitor as a low-pass filter between the ground and output voltage. 
   
 ### 📟 Arduino 
-  - the L298 has a 5V regulator and can be used as the power supply (see [connection diagram](#connecting-motor-driver-board))
-  - ❗ dont mount any high current consumer like the lamp 💡 or the motor ⚙ to the 5V output of the board it is not made for such high currents.
+  - the L298 has a 5V regulator and can be used as the power supply for the Arduino (see [connection diagram](#connecting-motor-driver-board))
+  - ❗ don't mount any high current consumer like the lamp 💡 or the motor ⚙ to the 5V output of the board it is not made for such high currents.
 
 ### 📏 Potentiometer 50k (linear)
-  - used to detect the angel of the pendulum
+  - used to detect the angle of the pendulum
   - additionally used as a mount for the pendulum
 
 ### 🔌 Capsule Slip Ring AC 240V
-  - the lamp 💡 is powerd by a isolated electric circuit with 240V AC
+  - the lamp 💡 is powered by an isolated electric circuit with 240V AC
   - the slip ring feeds the power thought the rotational pivot point
-  - also used as mount for the pendelum
+  - also used as a mount for the pendulum
 
 ### 🔌 Relay
   - isolates the 12V DC and the 240V AC 
-  - is triggerd by the arduino
+  - is triggerd by the Arduino
 
 {{</admonition>}}
 
@@ -79,10 +78,6 @@ To accomplish this symbiosis between this still highly complex balancing problem
 ### Connecting Motor Driver Board
 
 ![Stepper Motor with L298N and Arduino Tutorial (4 Examples)](https://www.makerguides.com/wp-content/uploads/2019/05/l298n-motor-driver-with-stepper-motor-and-arduino-wiring-diagram-schematic-pinout.jpg)
-
-
-
-
 
 
 ### Connecting Potentiometer
@@ -94,25 +89,21 @@ To accomplish this symbiosis between this still highly complex balancing problem
 
 ### Integration of Relay[^3]
 
-{{<figure src= "https://diyi0t.com/wp-content/uploads/2020/02/Relais-Module-Arduino-Uno-World_Steckplatine-1536x989.png" title= "Simple introduction to connect the relay to the arduino ">}}
-
-
-
-
+{{<figure src= "https://diyi0t.com/wp-content/uploads/2020/02/Relais-Module-Arduino-Uno-World_Steckplatine-1536x989.png">}}
 
 
 ## Control Algorithm
 
-In the following section I will give a brief introduction to the theory of the LQR Controller and provide you with my recommended resources which help you determine the coefficients of the feedback regulator!
+In the following section, I will give a brief introduction to the theory of the LQR Controller and provide you with my recommended resources which help you determine the coefficients of the feedback regulator!
 
 ### Mathematical representation
 
 {{<figure src= "http://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/System/Modeling/figures/pendulum.png">}}
 
 
-The simplified system consists of a inverted pendulum which is connected to a motorized card. Without further inspection we can   recognize that we are looking at a unstable system. If the cart is not moved it is nearly impossible to balance the pendulum in the upright position. The objective is it now to design a feedback controller which accelerates the carte enough so that the angle $ \phi $ of the pendulum is close to 180°. 
+The simplified system consists of an inverted pendulum which is connected to a motorized card. Without further inspection, we can recognize that we are looking at an unstable system. If the cart is not moved it is nearly impossible to balance the pendulum in the upright position. The objective is it now to design a feedback controller which accelerates the carte enough so that the angle $ \phi $ of the pendulum is close to 180°. 
 
-However we first have to define the nonlinear model:
+However, we first have to define the nonlinear model:
 
 {{<figure src= "https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/System/Modeling/html/InvertedPendulum_SystemModeling_eq14127640478467589374.png" >}}
 
@@ -121,13 +112,13 @@ However we first have to define the nonlinear model:
 
 {{< admonition type=example title="List of Variables" open= false >}}
 
-- *M*			 	mass of the cart
-- *m*				mass of pendulum
-- *b*				coefficient of friction for cart
-- *l*				length to pendulum center of mass
-- *I*				mass moment of inertia of the pendulum
-- *F*				force applied to the cart
-- *x*				cart position coordinate
+- *M*       mass of the cart
+- *m*       mass of the pendulum
+- *b*       coefficient of friction for cart
+- *l*       length to pendulum centre of mass
+- *I*       mass moment of inertia of the pendulum
+- *F*       force applied to the cart
+- *x*       cart position coordinate
 - *$\theta$* pendulum angle from vertical (down)
 - *u*       (input) here equivalent to the Force *F*
 
@@ -145,7 +136,7 @@ However we first have to define the nonlinear model:
 The script to determine the gains for the LQR Controller can be found [here](https://github.com/zjor/inverted-pendulum/blob/master/dc-motor/pendulum_lqr_control.py)!
 
 ### DC-Motor system identification
-The LQR Controller takes as a input the Force *F* of the DC-Motor. Therefore the next step is to find the undelying DC-Motor model and estimate the corresponding system parameters. Then the arduino is able to change the speed of the engine using the PWM signal.
+The LQR Controller takes as an input the Force *F* of the DC-Motor. Therefore the next step is to find the underlying DC-Motor model and estimate the corresponding system parameters. Then the Arduino can change the speed of the engine using the PWM signal.
 
 We can model a standard DC-Motor using the following equation:
 $$
@@ -169,7 +160,7 @@ To determine the parameters a,b,c we can record several velocity curves with dif
 
 ## Code
 
-The code is based on a existing arduino project[^4]
+The code is based on an existing Arduino project[^4]
 
 ```arduino
 #define A 9   
