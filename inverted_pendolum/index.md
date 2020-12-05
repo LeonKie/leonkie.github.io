@@ -32,20 +32,20 @@ This blog post will give you a step by step **recreation guide** and highlights 
 
 
 ### Mechanical Setup
-To accomplish this symbiosis between this still highly complex balancing problem and the potential usage as a design element, I first had to design a balancing cart 🚗 with a pivoting E27 socket for the lamp 💡. This brings the extra challenge of feeding a, in this case, 230V, cable throw various mountings and controlling it using an ordinary relay.
+To accomplish this symbiosis between this still highly complex balancing problem and the potential usage as a design element, I first had to design a balancing cart 🚗 with a pivoting E27 socket for the lamp 💡. This brings the extra challenge of feeding a, in this case, 230V, cable through various mountings and controlling it using an ordinary relay.
 {{<figure src= "IMG_20200830_182322.jpg">}}
 
 {{<admonition type=tip title="Design-choices">}}
 
 ### ⚙️ DV-Motor (first axel)
   - the L298N Motor Driver Module works up to 12V, without removing the jumper wire, therefore a 12V DV-Motor is a good choice for the setup
-  - a DC-Motor with 300-440 RPM or with a 15:1 gear ratio and a high enough torque, 10Ncm in my case (but that much might not be necessary) was sufficient for my setup
+  - should have sufficient torque and RPM. In my case around 300-440 RPM (depending on your wheel size) with a 15:1 gear ratio and 10Ncm was enough
   - ❗ be careful with the maximum current! The allowed Amps for the L298N Motor Driver Module is 2A (more information [here](https://components101.com/modules/l293n-motor-driver-module#:~:text=Driver%20Chip%3A%20Double%20H%20Bridge,Logic%20Voltage%3A%205V))
 
 ### 📏 Contious Angle Sensor (second axel)
-  - is used to monitor the position of the cart 🚗 relative to its starting position
-  - the angle sensor works like a normal potentiometer but allows for more than 360° turning angle.
-  - not the most reliable solution as it produced high noise in the zero orientation <br> => **Quick-fix:** use a capacitor as a low-pass filter between the ground and output voltage. 
+  - used to monitor the position of the cart 🚗 relative to its starting position
+  - works like a normal potentiometer but allows for more than 360° turning angle.
+  - not the most reliable solution as it produced high noise in the zero orientation <br> => **Quick-fix:** use a capacitor as a low-pass filter between the ground and output voltage.
   
 ### 📟 Arduino 
   - the L298 has a 5V regulator and can be used as the power supply for the Arduino (see [connection diagram](#connecting-motor-driver-board))
@@ -93,9 +93,9 @@ In the following section, I will give a brief introduction to the theory of the 
 {{<figure src= "http://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/System/Modeling/figures/pendulum.png">}}
 
 
-The simplified system consists of an inverted pendulum which is connected to a motorized card. Without further inspection, we can recognize that we are looking at an unstable system. If the cart is not moved it is nearly impossible to balance the pendulum in the upright position. The objective is it now to design a feedback controller which accelerates the carte enough so that the angle $ \phi $ of the pendulum is close to 180°. 
+The simplified system consists of an inverted pendulum which is connected to a motorized card. Without further inspection, we can recognize that we are looking at an unstable system. If the cart is not moved it is nearly impossible to balance the pendulum in the upright position. The objective is it now to design a feedback controller which accelerates the cart enough so that the angle $ \phi $ of the pendulum is close to 180°. 
 
-However, we first have to define the nonlinear model:
+For this we first have to define the nonlinear model:
 
 {{<figure src= "https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/System/Modeling/html/InvertedPendulum_SystemModeling_eq14127640478467589374.png" >}}
 
@@ -121,11 +121,29 @@ However, we first have to define the nonlinear model:
 
 ### LQR Controller
 
+The LQR or Linear quadratic regulator is one of many optimal control techniques, which takes into account the whole state vektor and computes the control decision based on a linear model. For non-linear plants like our inverted pendulum the system equations first has to be linearlized about the upright (unsable) equilibrium. This consequently means that our LQR controller is only sufficient within small diviations around the upright position.
+After linearlizing we have to calculate the gains $K$, this is done using the script linked [here](#determine-grains).
+With all that done we now can compute the imput volatge of the Motor using following equation:
 
+$$
+u = -Kx
+$$
 
+A deeper dive into the theroy behind the calculaton of the linearlized model can be found [here](https://link.springer.com/article/10.1007/s11633-014-0818-1#:~:text=The%20nonlinear%20system%20states%20are,a%20linear%20state%2Dspace%20model.&text=Here%20the%20control%20objective%20is,stabilizes%20in%20the%20upright%20position.)!
 
 ### Determine grains
-The script to determine the gains for the LQR Controller can be found [here](https://github.com/zjor/inverted-pendulum/blob/master/dc-motor/pendulum_lqr_control.py)!
+
+The script which already includes the linearlized model to determine the gains for the LQR Controller can be found [here](https://github.com/zjor/inverted-pendulum/blob/master/dc-motor/pendulum_lqr_control.py)!
+
+{{<admonition type=tip title="Tip">}}
+
+  When you caclulate the model specific gains $K$ it is very important that you measure the weight ⚖ of the cart 🚗 and the pendulum + lamp 💡 very precisely as the controller is very sensitive! 
+
+{{</admonition>}}
+
+To furthermore approve your parameters the script [[controlled-cart-pendulum.py](https://github.com/zjor/inverted-pendulum/blob/master/python/controlled-cart-pendulum.py)] from a similar project[^4] simulates the control behaviour.
+
+{{< figure src= "controlled-cart.gif" >}}
 
 ### DC-Motor system identification
 The LQR Controller takes as an input the Force *F* of the DC-Motor. Therefore the next step is to find the underlying DC-Motor model and estimate the corresponding system parameters. Then the Arduino can change the speed of the engine using the PWM signal.
@@ -144,10 +162,6 @@ To determine the parameters a,b,c we can record several velocity curves with dif
 {{<figure src= "Engine-estimation.png" title="">}}
 
 *Credits to zjor for creating the scripts[^4]*
-
-
-## Conclustion
-
 
 
 ## Code
@@ -368,7 +382,7 @@ void loop() {
 
 
 
-{{< figure src= "controlled-cart.gif" >}}
+
 
 
 
