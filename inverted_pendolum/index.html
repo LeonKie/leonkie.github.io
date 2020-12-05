@@ -289,21 +289,21 @@
         </div>
     </div>
 <h3 id="lqr-controller">LQR Controller</h3>
-<p>The LQR or Linear quadratic regulator is one of many optimal control techniques, which takes into account the whole state vektor and computes the control decision based on a linear model. For non-linear plants like our inverted pendulum the system equations first has to be linearlized about the upright (unsable) equilibrium. This consequently means that our LQR controller is only sufficient within small diviations around the upright position.
-After linearlizing we have to calculate the gains $K$, this is done using the script linked <a href="#determine-grains" rel="">here</a>.
-With all that done we now can compute the imput volatge of the Motor using following equation:</p>
+<p>The LQR or Linear quadratic regulator is one of many optimal control techniques, which takes into account the whole state vector and computes the control decision based on a linear model. For non-linear plants like our inverted pendulum, the system equations first have to be linearized about the upright (unstable) equilibrium. This consequently means that our LQR controller is only sufficient within small deviations around the upright position.
+After linearizing we have to calculate the gains $K$, this is done using the script linked <a href="#determine-grains" rel="">here</a>.
+With all that done, we now can compute the input voltage of the Motor using the following equation:</p>
 <p>$$
 u = -Kx
 $$</p>
-<p>A deeper dive into the theroy behind the calculaton of the linearlized model can be found <a href="https://link.springer.com/article/10.1007/s11633-014-0818-1#:~:text=The%20nonlinear%20system%20states%20are,a%20linear%20state%2Dspace%20model.&amp;text=Here%20the%20control%20objective%20is,stabilizes%20in%20the%20upright%20position." target="_blank" rel="noopener noreffer">here</a>!</p>
+<p>A deeper dive into the theory behind the calculation of the linearized model can be found <a href="https://link.springer.com/article/10.1007/s11633-014-0818-1#:~:text=The%20nonlinear%20system%20states%20are,a%20linear%20state%2Dspace%20model.&amp;text=Here%20the%20control%20objective%20is,stabilizes%20in%20the%20upright%20position." target="_blank" rel="noopener noreffer">here</a>!</p>
 <h3 id="determine-grains">Determine grains</h3>
-<p>The script which already includes the linearlized model to determine the gains for the LQR Controller can be found <a href="https://github.com/zjor/inverted-pendulum/blob/master/dc-motor/pendulum_lqr_control.py" target="_blank" rel="noopener noreffer">here</a>!</p>
+<p>The script which already includes the linearized model to determine the gains for the LQR Controller can be found <a href="https://github.com/zjor/inverted-pendulum/blob/master/dc-motor/pendulum_lqr_control.py" target="_blank" rel="noopener noreffer">here</a>!</p>
 <div class="details admonition tip open">
         <div class="details-summary admonition-title">
             <i class="icon fas fa-lightbulb fa-fw"></i>Tip<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">When you caclulate the model specific gains $K$ it is very important that you measure the weight ⚖ of the cart 🚗 and the pendulum + lamp 💡 very precisely as the controller is very sensitive!</div>
+            <div class="admonition-content">When you calculate the model-specific gains $K$ it is very important that you measure the weight ⚖ of the cart 🚗 and the pendulum + lamp 💡 very precisely as the controller is very sensitive!</div>
         </div>
     </div>
 <p>To furthermore approve your parameters the script [<a href="https://github.com/zjor/inverted-pendulum/blob/master/python/controlled-cart-pendulum.py" target="_blank" rel="noopener noreffer">controlled-cart-pendulum.py</a>] from a similar project<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> simulates the control behaviour.</p>
