@@ -13,7 +13,7 @@ math:
 
 ## Introduction
 
-The inverted pendulum is one of the most popular demonstrations in system control, has been studied since the 1960[^1] and prime example at unis and other research institutes. However, the inverted pendulum, which is nothing more than a pendulum that has the centre of mass above the pivot point, yet has no particular use case. To change this once in for all, I build an **inverted pendulum lamp**, which can be used as a normal stylish desk lamp. *(The main incentive, however, wasn't so heroic. Honestly! It sounded just like a nice project idea!)* 
+The inverted pendulum is one of the most popular demonstrations in system control, has been studied since the 1960[^1] and is a prime example at unis and other research institutes. However, the inverted pendulum, which is nothing more than a pendulum that has the centre of mass above the pivot point, yet has no particular use case. To change this once in for all, I build an **inverted pendulum lamp**, which can be used as a normal stylish desk lamp. *(The main incentive, however, wasn't so heroic. Honestly! It sounded just like a nice project idea!)* 
 
 {{< admonition type=note title="Note" >}}
 
