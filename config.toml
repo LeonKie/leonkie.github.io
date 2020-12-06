@@ -14,7 +14,7 @@ theme = "LoveIt"
   # site description
   description = "This is my perosonal Blog. Here you can find my personal interests"
   # site keywords
-  keywords = ["projects", "coding"]
+  keywords = ["inverted lamp","mecanical","kiesgen","projects", "coding","arduino"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
@@ -321,11 +321,11 @@ theme = "LoveIt"
       # Gitalk comment config
       [params.page.comment.gitalk]
         # 
-        enable = false
-        owner = ""
-        repo = ""
-        clientId = ""
-        clientSecret = ""
+        enable = true
+        owner = "LeonKie"
+        repo = "https://github.com/LeonKie/BlogComments"
+        clientId = "31581f525dd74914baac"
+        clientSecret = "99d722c67f758e4a1cfecf272ff79285dbbb0182"
       # Valine comment config
       [params.page.comment.valine]
         enable = false
@@ -366,7 +366,7 @@ theme = "LoveIt"
         outlined = false
       #  Commento comment config
       [params.page.comment.commento]
-        enable = true
+        enable = false
       #  Utterances comment config
       [params.page.comment.utterances]
         enable = false
