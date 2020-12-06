@@ -323,7 +323,7 @@ theme = "LoveIt"
         # 
         enable = true
         owner = "LeonKie"
-        repo = "https://github.com/LeonKie/BlogComments"
+        repo = "LeonKie/BlogComments"
         clientId = "31581f525dd74914baac"
         clientSecret = "99d722c67f758e4a1cfecf272ff79285dbbb0182"
       # Valine comment config
