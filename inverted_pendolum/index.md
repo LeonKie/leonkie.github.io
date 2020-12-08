@@ -1,4 +1,4 @@
-# Inverterd Pendulum
+# Inverted Pendulum
 
 
 {{< youtube YQyPyLgG7x4 >}}
