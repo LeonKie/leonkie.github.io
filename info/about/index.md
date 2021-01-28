@@ -6,7 +6,7 @@
 
 {{<figure src= "../avatar.png" title="">}}
 {{<typeit>}}
- *Hi I am Leon Kiesgen.*
+*Hi I am Leon Kiesgen.*
 {{</typeit>}}
 
 **Mechanical engineer and maker**. I love to come up with unique solutions for unknown problems and this is the right space for my personal projects that what to be noticed :).
