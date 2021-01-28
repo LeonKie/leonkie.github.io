@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infos on My personal Blog</title>
+    <link>https://leonkie.github.io/info/</link>
+    <description>Recent content in Infos on My personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>leon@kiesgen.eu (Leon Kie)</managingEditor>
+    <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster>
+    <lastBuildDate>Thu, 28 Jan 2021 10:38:23 +0200</lastBuildDate>
+    
+	<atom:link href="https://leonkie.github.io/info/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About me</title>
+      <link>https://leonkie.github.io/info/about/</link>
+      <pubDate>Thu, 28 Jan 2021 10:38:23 +0200</pubDate>
+      <author>leon@kiesgen.eu (Leon Kie)</author>
+      <guid>https://leonkie.github.io/info/about/</guid>
+      <description>Mechanical engineer and maker. I love to come up with unique solutions for unkown problems and this is the right space for my personal projects that what to be noticed :).
+What is this Blog about?I have done several projects in the past involving arduinos, mechatronics or simple mechanical designs mostly around 3d printing. However in the future i also want to share some more software orientated projects and creative stuff that comes into my mind.</description>
+    </item>
+    
+  </channel>
+</rss>
