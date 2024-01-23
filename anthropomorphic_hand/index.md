@@ -35,10 +35,6 @@ The prosthesis design process involved substantial research and creative enginee
 
 The fingers were designed with leaf springs for flexibility and underactuated movement, enabling them to adapt to the shape of the grasped object. The thumb, with its unique design, was integral to achieving effective grasping modes. The fingers and thumb were made adaptable, with their movement driven by a single tendon, ensuring simplicity and efficiency in the design.
 
-{{< style "text-align:right; strong{color:#00b1ff;}" >}}
-This is a **right-aligned** paragraph.
-{{< /style >}}
-
 {{<image height="250" src= "./images/Finger.gif" title="">}}
 {{<image height="250" src= "./images/Finger2.gif" title="">}}
 
