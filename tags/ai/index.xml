@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>AI - Tag - My personal Blog</title>
+        <link>https://leonkie.github.io/tags/ai/</link>
+        <description>AI - Tag - My personal Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leon@kiesgen.eu (Leon Kie)</managingEditor>
+            <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster><atom:link href="https://leonkie.github.io/tags/ai/" rel="self" type="application/rss+xml" /><item>
+    <title>Stay Fit &amp; Get Your Caffeine Fix with AI-Powered Squat Detection</title>
+    <link>https://leonkie.github.io/squat_detector/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/squat_detector/</guid>
+    <description><![CDATA[Introduction What if your workout routine could be seamlessly integrated with a reward system that acknowledges your efforts with something as delightful as a cup of coffee? We&rsquo;ve developed a unique approach to fitness with a technological spin: using face-recognition from the AIY Vision Kit to detect squats and reward you with a free coffee after your exercise.
+The Concept This idea leverages a face-detection model to monitor a person&rsquo;s face within a video feed.]]></description>
+</item></channel>
+</rss>

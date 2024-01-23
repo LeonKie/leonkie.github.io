@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Anthropomorphic Prosthesis for the Cybathlon Challenge - My personal Blog</title><meta name="Description" content="This is my perosonal Blog. Here you can find my personal interests"><meta property="og:title" content="Anthropomorphic Prosthesis for the Cybathlon Challenge" />
+<meta property="og:description" content="Introduction to the Cybathlon Prosthesis In the course of 2 Semesters, we, in a team of 3 people, designed and prototyped a robotic hand for the Cybathlon competition, aiming to realise an anthropomorphic prosthetic hand. The project was guided by the principle of anthropomorphism in robotics, focusing on emulating the appearance, motion, and sensory capabilities of the human hand. This approach led us to develop a prosthesis that not only met the functional requirements of the competition but also had a visually appealing, human-like design." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://leonkie.github.io/anthropomorphic_hand/" /><meta property="og:image" content="https://leonkie.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://leonkie.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Anthropomorphic Prosthesis for the Cybathlon Challenge"/>
+<meta name="twitter:description" content="Introduction to the Cybathlon Prosthesis In the course of 2 Semesters, we, in a team of 3 people, designed and prototyped a robotic hand for the Cybathlon competition, aiming to realise an anthropomorphic prosthetic hand. The project was guided by the principle of anthropomorphism in robotics, focusing on emulating the appearance, motion, and sensory capabilities of the human hand. This approach led us to develop a prosthesis that not only met the functional requirements of the competition but also had a visually appealing, human-like design."/>
+<meta name="application-name" content="LeonKie">
+<meta name="apple-mobile-web-app-title" content="LeonKie"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://leonkie.github.io/anthropomorphic_hand/" /><link rel="prev" href="https://leonkie.github.io/inverted_pendolum/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Anthropomorphic Prosthesis for the Cybathlon Challenge",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/leonkie.github.io\/anthropomorphic_hand\/"
+        },"genre": "posts","keywords": "Cybathlon, Prosthesis Design, Robotics Engineering","wordcount":  673 ,
+        "url": "https:\/\/leonkie.github.io\/anthropomorphic_hand\/","datePublished": "2022-03-01T00:00:00+00:00","dateModified": "2022-03-01T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Leon Kie"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My personal Blog"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/projekt.png"
+        data-srcset="/images/projekt.png, /images/projekt.png 1.5x, /images/projekt.png 2x"
+        data-sizes="auto"
+        alt="/images/projekt.png"
+        title="/images/projekt.png" />My Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/info/about/"> About me </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My personal Blog"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/projekt.png"
+        data-srcset="/images/projekt.png, /images/projekt.png 1.5x, /images/projekt.png 2x"
+        data-sizes="auto"
+        alt="/images/projekt.png"
+        title="/images/projekt.png" />My Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/info/about/" title="">About me</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Anthropomorphic Prosthesis for the Cybathlon Challenge</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Leon Kie</a></span>&nbsp;<span class="post-category">included in <a href="/categories/robotics/"><i class="far fa-folder fa-fw"></i>Robotics</a>&nbsp;<a href="/categories/prosthesis-development/"><i class="far fa-folder fa-fw"></i>Prosthesis Development</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-01">2022-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;673 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-to-the-cybathlon-prosthesis">Introduction to the Cybathlon Prosthesis</a></li>
+    <li><a href="#design-and-development-process">Design and Development Process</a>
+      <ul>
+        <li><a href="#finger-mechanics-and-dynamics">Finger Mechanics and Dynamics</a></li>
+        <li><a href="#palm-design-and-tendon-routing">Palm Design and Tendon Routing</a></li>
+        <li><a href="#wrist-mechanism-a-differential-approach">Wrist Mechanism: A Differential Approach</a></li>
+        <li><a href="#stump-interface-enhancing-pilot-comfort">Stump Interface: Enhancing Pilot Comfort</a></li>
+      </ul>
+    </li>
+    <li><a href="#documents">Documents</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube-nocookie.com/embed/2YJQu47cMlk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="introduction-to-the-cybathlon-prosthesis">Introduction to the Cybathlon Prosthesis</h2>
+<p>In the course of 2 Semesters, we, in a team of 3 people, designed and prototyped a robotic hand for the <a href="https://cybathlon.ethz.ch/de/events/challenges" target="_blank" rel="noopener noreffer">Cybathlon competition</a>, aiming to realise an anthropomorphic prosthetic hand. The project was guided by the principle of anthropomorphism in robotics, focusing on emulating the appearance, motion, and sensory capabilities of the human hand. This approach led us to develop a prosthesis that not only met the functional requirements of the competition but also had a visually appealing, human-like design.</p>
+<h2 id="design-and-development-process">Design and Development Process</h2>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Sub-Assemblies<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>The challenge of designing a robotic prosthesis can be divided into <strong>four</strong> different sub-assemblies, each with unique requirements and challenges:</p>
+<ul>
+<li>☝️ Finger</li>
+<li>🌴 Palm</li>
+<li>👋 Wrist</li>
+<li>🪵 Stump</li>
+</ul>
+<p>As the responsibilities were split in the team, it was important to define <strong>common interfaces</strong> between each part.</p>
+</div>
+        </div>
+    </div>
+<p>Here you can see the final prototype including key design highlights in the build. In total, the prosthesis had a weight of 0.9kg which is comparable to state of the art prostheses.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="./images/Design%20Overview.png"
+        data-srcset="./images/Design%20Overview.png, ./images/Design%20Overview.png 1.5x, ./images/Design%20Overview.png 2x"
+        data-sizes="auto"
+        alt="./images/Design%20Overview.png"
+        title="Overview" /></p>
+<p>The prosthesis design process involved substantial research and creative engineering to achieve the desired functionality and aesthetics. We focused on developing a gripping mechanism with a singular degree of freedom (DOF) but capable of performing both power and pinch grasp which are essential for the Cybathlon competition. Additionally, our wrist mechanism featured two DOFs, providing enhanced agility and functionality in grasping motions.</p>
+<h3 id="finger-mechanics-and-dynamics">Finger Mechanics and Dynamics</h3>
+<p>The fingers were designed with leaf springs for flexibility and underactuated movement, enabling them to adapt to the shape of the grasped object. The thumb, with its unique design, was integral to achieving effective grasping modes. The fingers and thumb were made adaptable, with their movement driven by a single tendon, ensuring simplicity and efficiency in the design.</p>
+<div id="id-1">This is a <strong>right-aligned</strong> paragraph.</div>
+<p><a class="lightgallery" href="./images/Finger.gif" title="./images/Finger.gif" data-thumbnail="./images/Finger.gif">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="./images/Finger.gif"
+            data-srcset="./images/Finger.gif, ./images/Finger.gif 1.5x, ./images/Finger.gif 2x"
+            data-sizes="auto"
+            alt="./images/Finger.gif" height="250" />
+    </a>
+<a class="lightgallery" href="./images/Finger2.gif" title="./images/Finger2.gif" data-thumbnail="./images/Finger2.gif">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="./images/Finger2.gif"
+            data-srcset="./images/Finger2.gif, ./images/Finger2.gif 1.5x, ./images/Finger2.gif 2x"
+            data-sizes="auto"
+            alt="./images/Finger2.gif" height="250" />
+    </a></p>
+<h3 id="palm-design-and-tendon-routing">Palm Design and Tendon Routing</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="./images/TendonRouting.png"
+        data-srcset="./images/TendonRouting.png, ./images/TendonRouting.png 1.5x, ./images/TendonRouting.png 2x"
+        data-sizes="auto"
+        alt="./images/TendonRouting.png"
+        title="TendonRouting" /></p>
+<p>The palm was designed to serve as both the structural core and the aesthetic outer shell of the prosthesis similar to a monocouque in a race car. It housed the <strong>motor unit</strong>, <strong>finger mounts</strong>, and the <strong>pulley system</strong> essential for the <strong>tendon-driven movement</strong> of the fingers. The challenge was to integrate these mechanical elements within a design that mimicked the human palm&rsquo;s look and feel. By using lightweight materials like <strong>Nylon</strong> and <strong>PLA</strong>, we managed to balance mechanical functionality with an anthropomorphic appearance.</p>
+<p>On the figure above you can see the tendon routing which enables two different adaptive grasping types. One where the thumb is delayed and therefore curls over the index finger <strong>(power grasp)</strong> and one where the timing of the fingers is tuned such that index finger and thumb meet directly <strong>(pinch grasp)</strong>.</p>
+<h3 id="wrist-mechanism-a-differential-approach">Wrist Mechanism: A Differential Approach</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="./images/Wrist.png"
+        data-srcset="./images/Wrist.png, ./images/Wrist.png 1.5x, ./images/Wrist.png 2x"
+        data-sizes="auto"
+        alt="./images/Wrist.png"
+        title="Overview of parts" /></p>
+<p>One of the project&rsquo;s highlights was the innovative wrist mechanism. Instead of assigning one motor for each DOF, we developed a differential wrist mechanism that connected both motors in the same power train.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="./images/DiffDrive.png"
+        data-srcset="./images/DiffDrive.png, ./images/DiffDrive.png 1.5x, ./images/DiffDrive.png 2x"
+        data-sizes="auto"
+        alt="./images/DiffDrive.png"
+        title="TendonRouting" /></p>
+<p><strong>Flexion</strong> and <strong>extension</strong> can be achieved by rotating both motors in the same directions. <strong>Pronation</strong> and
+<strong>Supination</strong> is realized if the motors are actuated in opposing directions.</p>
+<p>This design allowed for simultaneous and continuous power allocation to both DOFs of the wrist. The motors, placed close to the stump interface, optimised weight distribution and reduced structural stress.</p>
+<h3 id="stump-interface-enhancing-pilot-comfort">Stump Interface: Enhancing Pilot Comfort</h3>
+<p>The stump interface, custom-fitted for the pilot, offered comfort and an additional passive rotational joint for ease of adjustment. This passive rotary mechanism allowed for easy, single-handed manipulation and provided a task-adaptable pronation/supination offset, significantly enhancing the pilot&rsquo;s comfort and the prosthesis&rsquo;s functionality.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="./images/Stump.gif"
+        data-srcset="./images/Stump.gif, ./images/Stump.gif 1.5x, ./images/Stump.gif 2x"
+        data-sizes="auto"
+        alt="./images/Stump.gif"
+        title="Stump" /></p>
+<p>A notable feature is the additional manual degree of freedom for the wrist. This improvement allows for heightened control and flexibility, enabling users to navigate their prosthetics with greater precision. In total, it introduces a 14-step rotation system with 25.7° increments.
+A robust, tight locking mechanism is integrated to prevent unintended movements. This feature ensures stability during various activities, addressing concerns related to reliability and safety in daily use.</p>
+<h2 id="documents">Documents</h2>
+<p>For a more detailed overview of the Design use the following link to get read the full report about this project.
+<a href="./images/Cybathlon_Group1_Report%20%281%29.pdf" rel="">💾 Report</a></p>
+<hr>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-03-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/anthropomorphic_hand/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://leonkie.github.io/anthropomorphic_hand/" data-title="Anthropomorphic Prosthesis for the Cybathlon Challenge" data-via="leon__kie" data-hashtags="Cybathlon,Prosthesis Design,Robotics Engineering"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://leonkie.github.io/anthropomorphic_hand/" data-title="Anthropomorphic Prosthesis for the Cybathlon Challenge"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/cybathlon/">Cybathlon</a>,&nbsp;<a href="/tags/prosthesis-design/">Prosthesis Design</a>,&nbsp;<a href="/tags/robotics-engineering/">Robotics Engineering</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/inverted_pendolum/" class="prev" rel="prev" title="Inverted Pendulum"><i class="fas fa-angle-left fa-fw"></i>Inverted Pendulum</a></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.114.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Leon Kie</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/css/2f1ef0.min.css"><script type="text/javascript" src="/lib/gitalk/gitalk.min.js"></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"gitalk":{"admin":["LeonKie"],"clientID":"31581f525dd74914baac","clientSecret":"faf66524b0ed66814e24ce9a711e42f39098bc52","id":"2022-03-01T00:00:00Z","owner":"LeonKie","repo":"BlogComments","title":"Anthropomorphic Prosthesis for the Cybathlon Challenge"}},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"$$","right":"$$"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"},{"display":false,"left":"$","right":"$"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

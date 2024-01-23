@@ -1,0 +1,78 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - Tag - My personal Blog</title>
+        <link>https://leonkie.github.io/tags/</link>
+        <description>Tags - Tag - My personal Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leon@kiesgen.eu (Leon Kie)</managingEditor>
+            <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster><lastBuildDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://leonkie.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Cybathlon</title>
+    <link>https://leonkie.github.io/tags/cybathlon/</link>
+    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/tags/cybathlon/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Prosthesis Design</title>
+    <link>https://leonkie.github.io/tags/prosthesis-design/</link>
+    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/tags/prosthesis-design/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Robotics Engineering</title>
+    <link>https://leonkie.github.io/tags/robotics-engineering/</link>
+    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/tags/robotics-engineering/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>dc-motor</title>
+    <link>https://leonkie.github.io/tags/dc-motor/</link>
+    <pubDate>Mon, 31 Aug 2020 23:38:56 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/tags/dc-motor/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>electronics</title>
+    <link>https://leonkie.github.io/tags/electronics/</link>
+    <pubDate>Mon, 31 Aug 2020 23:38:56 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/tags/electronics/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>L298n</title>
+    <link>https://leonkie.github.io/tags/l298n/</link>
+    <pubDate>Mon, 31 Aug 2020 23:38:56 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/tags/l298n/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>lamp</title>
+    <link>https://leonkie.github.io/tags/lamp/</link>
+    <pubDate>Mon, 31 Aug 2020 23:38:56 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/tags/lamp/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>AI</title>
+    <link>https://leonkie.github.io/tags/ai/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/tags/ai/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Fitness</title>
+    <link>https://leonkie.github.io/tags/fitness/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/tags/fitness/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Innovation</title>
+    <link>https://leonkie.github.io/tags/innovation/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/tags/innovation/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>

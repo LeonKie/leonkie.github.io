@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Robotics Engineering - Tag - My personal Blog</title>
+        <link>https://leonkie.github.io/tags/robotics-engineering/</link>
+        <description>Robotics Engineering - Tag - My personal Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leon@kiesgen.eu (Leon Kie)</managingEditor>
+            <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster><lastBuildDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://leonkie.github.io/tags/robotics-engineering/" rel="self" type="application/rss+xml" /><item>
+    <title>Anthropomorphic Prosthesis for the Cybathlon Challenge</title>
+    <link>https://leonkie.github.io/anthropomorphic_hand/</link>
+    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/anthropomorphic_hand/</guid>
+    <description><![CDATA[Introduction to the Cybathlon Prosthesis In the course of 2 Semesters, we, in a team of 3 people, designed and prototyped a robotic hand for the Cybathlon competition, aiming to realise an anthropomorphic prosthetic hand. The project was guided by the principle of anthropomorphism in robotics, focusing on emulating the appearance, motion, and sensory capabilities of the human hand. This approach led us to develop a prosthesis that not only met the functional requirements of the competition but also had a visually appealing, human-like design.]]></description>
+</item></channel>
+</rss>

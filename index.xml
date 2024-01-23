@@ -4,14 +4,36 @@
         <link>https://leonkie.github.io/</link>
         <description>This is my perosonal Blog. Here you can find my personal interests</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leon@kiesgen.eu (Leon Kie)</managingEditor>
-            <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster><lastBuildDate>Thu, 28 Jan 2021 10:38:23 &#43;0200</lastBuildDate>
+            <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster><lastBuildDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://leonkie.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Anthropomorphic Prosthesis for the Cybathlon Challenge</title>
+    <link>https://leonkie.github.io/anthropomorphic_hand/</link>
+    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/anthropomorphic_hand/</guid>
+    <description><![CDATA[Introduction to the Cybathlon Prosthesis In the course of 2 Semesters, we, in a team of 3 people, designed and prototyped a robotic hand for the Cybathlon competition, aiming to realise an anthropomorphic prosthetic hand. The project was guided by the principle of anthropomorphism in robotics, focusing on emulating the appearance, motion, and sensory capabilities of the human hand. This approach led us to develop a prosthesis that not only met the functional requirements of the competition but also had a visually appealing, human-like design.]]></description>
+</item><item>
     <title>Inverted Pendulum</title>
     <link>https://leonkie.github.io/inverted_pendolum/</link>
     <pubDate>Mon, 31 Aug 2020 23:38:56 &#43;0200</pubDate>
     <author>Author</author>
     <guid>https://leonkie.github.io/inverted_pendolum/</guid>
     <description><![CDATA[Introduction The inverted pendulum is one of the most popular demonstrations in system control, has been studied since the 19601 and is a prime example at unis and other research institutes. However, the inverted pendulum, which is nothing more than a pendulum that has the centre of mass above the pivot point, yet has no particular use case. To change this once in for all, I build an inverted pendulum lamp, which can be used as a normal stylish desk lamp.]]></description>
+</item><item>
+    <title>Occupancy munich - Avoid people in corona times</title>
+    <link>https://leonkie.github.io/occupancy_munich/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/occupancy_munich/</guid>
+    <description><![CDATA[George_OrwellBig brother is watching youWeekly overview of the occupancy of a facility Website (Online) Introduction I am a climber and I like to go climbing gyms or bouldering gyms. As I and a friend were going regularly to the same gym in Munich, we kept discussing the best possible time we could meet and encounter as few other people as possible. When we had the reluctance to choose our arrival time freely this wasn&rsquo;t a big deal.]]></description>
+</item><item>
+    <title>Stay Fit &amp; Get Your Caffeine Fix with AI-Powered Squat Detection</title>
+    <link>https://leonkie.github.io/squat_detector/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/squat_detector/</guid>
+    <description><![CDATA[Introduction What if your workout routine could be seamlessly integrated with a reward system that acknowledges your efforts with something as delightful as a cup of coffee? We&rsquo;ve developed a unique approach to fitness with a technological spin: using face-recognition from the AIY Vision Kit to detect squats and reward you with a free coffee after your exercise.
+The Concept This idea leverages a face-detection model to monitor a person&rsquo;s face within a video feed.]]></description>
 </item></channel>
 </rss>
