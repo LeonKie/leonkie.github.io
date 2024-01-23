@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/leonkie.github.io\/anthropomorphic_hand\/"
-        },"genre": "posts","keywords": "Cybathlon, Prosthesis Design, Robotics Engineering","wordcount":  668 ,
+        },"genre": "posts","keywords": "Cybathlon, Prosthesis Design, Robotics Engineering","wordcount":  703 ,
         "url": "https:\/\/leonkie.github.io\/anthropomorphic_hand\/","datePublished": "2022-03-01T00:00:00+00:00","dateModified": "2022-03-01T00:00:00+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -119,7 +119,7 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Anthropomorphic Prosthesis for the Cybathlon Challenge</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Leon Kie</a></span>&nbsp;<span class="post-category">included in <a href="/categories/robotics/"><i class="far fa-folder fa-fw"></i>Robotics</a>&nbsp;<a href="/categories/prosthesis-development/"><i class="far fa-folder fa-fw"></i>Prosthesis Development</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-01">2022-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;668 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-01">2022-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;703 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -176,24 +176,25 @@
 <p>The prosthesis design process involved substantial research and creative engineering to achieve the desired functionality and aesthetics. We focused on developing a gripping mechanism with a singular degree of freedom (DOF) but capable of performing both power and pinch grasp which are essential for the Cybathlon competition. Additionally, our wrist mechanism featured two DOFs, providing enhanced agility and functionality in grasping motions.</p>
 <h3 id="finger-mechanics-and-dynamics">Finger Mechanics and Dynamics</h3>
 <p>The fingers were designed with leaf springs for flexibility and underactuated movement, enabling them to adapt to the shape of the grasped object. The thumb, with its unique design, was integral to achieving effective grasping modes. The fingers and thumb were made adaptable, with their movement driven by a single tendon, ensuring simplicity and efficiency in the design.</p>
-<p><a class="lightgallery" href="./images/Finger.gif" title="./images/Finger.gif" data-thumbnail="./images/Finger.gif">
+<p><a class="lightgallery" href="./images/Finger.gif" title="Finger without cruciate ligamnets" data-thumbnail="./images/Finger.gif">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
             data-src="./images/Finger.gif"
             data-srcset="./images/Finger.gif, ./images/Finger.gif 1.5x, ./images/Finger.gif 2x"
             data-sizes="auto"
-            alt="./images/Finger.gif" height="250" />
+            alt="./images/Finger.gif" width="45%" />
     </a>
-<a class="lightgallery" href="./images/Finger2.gif" title="./images/Finger2.gif" data-thumbnail="./images/Finger2.gif">
+<a class="lightgallery" href="./images/Finger2.gif" title="Finger with cruciate ligamnets" data-thumbnail="./images/Finger2.gif">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
             data-src="./images/Finger2.gif"
             data-srcset="./images/Finger2.gif, ./images/Finger2.gif 1.5x, ./images/Finger2.gif 2x"
             data-sizes="auto"
-            alt="./images/Finger2.gif" height="250" />
+            alt="./images/Finger2.gif" width="40%" />
     </a></p>
+<p>To add torsional stiffness to the joint additonal cruciat ligaments where used similar to the ones present in a human knee joint.</p>
 <h3 id="palm-design-and-tendon-routing">Palm Design and Tendon Routing</h3>
 <p><img
         class="lazyload"
@@ -206,15 +207,12 @@
 <p>The palm was designed to serve as both the structural core and the aesthetic outer shell of the prosthesis similar to a monocouque in a race car. It housed the <strong>motor unit</strong>, <strong>finger mounts</strong>, and the <strong>pulley system</strong> essential for the <strong>tendon-driven movement</strong> of the fingers. The challenge was to integrate these mechanical elements within a design that mimicked the human palm&rsquo;s look and feel. By using lightweight materials like <strong>Nylon</strong> and <strong>PLA</strong>, we managed to balance mechanical functionality with an anthropomorphic appearance.</p>
 <p>On the figure above you can see the tendon routing which enables two different adaptive grasping types. One where the thumb is delayed and therefore curls over the index finger <strong>(power grasp)</strong> and one where the timing of the fingers is tuned such that index finger and thumb meet directly <strong>(pinch grasp)</strong>.</p>
 <h3 id="wrist-mechanism-a-differential-approach">Wrist Mechanism: A Differential Approach</h3>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="./images/Wrist.png"
-        data-srcset="./images/Wrist.png, ./images/Wrist.png 1.5x, ./images/Wrist.png 2x"
-        data-sizes="auto"
-        alt="./images/Wrist.png"
-        title="Overview of parts" /></p>
-<p>One of the project&rsquo;s highlights was the innovative wrist mechanism. Instead of assigning one motor for each DOF, we developed a differential wrist mechanism that connected both motors in the same power train.</p>
+<p><figure><img src="./images/Wrist.png" width="60%"/><figcaption>
+            <h4>Overview of parts in the wrist</h4>
+        </figcaption>
+</figure>
+
+One of the project&rsquo;s highlights was the innovative wrist mechanism. Instead of assigning one motor for each DOF, we developed a differential wrist mechanism that connected both motors in the same power train.</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -228,15 +226,12 @@
 <p>This design allowed for simultaneous and continuous power allocation to both DOFs of the wrist. The motors, placed close to the stump interface, optimised weight distribution and reduced structural stress.</p>
 <h3 id="stump-interface-enhancing-pilot-comfort">Stump Interface: Enhancing Pilot Comfort</h3>
 <p>The stump interface, custom-fitted for the pilot, offered comfort and an additional passive rotational joint for ease of adjustment. This passive rotary mechanism allowed for easy, single-handed manipulation and provided a task-adaptable pronation/supination offset, significantly enhancing the pilot&rsquo;s comfort and the prosthesis&rsquo;s functionality.</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="./images/Stump.gif"
-        data-srcset="./images/Stump.gif, ./images/Stump.gif 1.5x, ./images/Stump.gif 2x"
-        data-sizes="auto"
-        alt="./images/Stump.gif"
-        title="Stump" /></p>
-<p>A notable feature is the additional manual degree of freedom for the wrist. This improvement allows for heightened control and flexibility, enabling users to navigate their prosthetics with greater precision. In total, it introduces a 14-step rotation system with 25.7° increments.
+<p><figure><img src="./images/Stump.gif" width="40%"/><figcaption>
+            <h4>Manual Locking Mechanism for Supination and Pronation</h4>
+        </figcaption>
+</figure>
+
+A notable feature is the additional manual degree of freedom for the wrist. This improvement allows for heightened control and flexibility, enabling users to navigate their prosthetics with greater precision. In total, it introduces a 14-step rotation system with 25.7° increments.
 A robust, tight locking mechanism is integrated to prevent unintended movements. This feature ensures stability during various activities, addressing concerns related to reliability and safety in daily use.</p>
 <h2 id="documents">Documents</h2>
 <p>For a more detailed overview of the Design use the following link to get read the full report about this project.

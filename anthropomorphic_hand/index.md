@@ -35,10 +35,10 @@ The prosthesis design process involved substantial research and creative enginee
 
 The fingers were designed with leaf springs for flexibility and underactuated movement, enabling them to adapt to the shape of the grasped object. The thumb, with its unique design, was integral to achieving effective grasping modes. The fingers and thumb were made adaptable, with their movement driven by a single tendon, ensuring simplicity and efficiency in the design.
 
-{{<image height="250" src= "./images/Finger.gif" title="">}}
-{{<image height="250" src= "./images/Finger2.gif" title="">}}
+{{<image width="45%" src= "./images/Finger.gif" title="Finger without cruciate ligamnets">}}
+{{<image width="40%" src= "./images/Finger2.gif" title="Finger with cruciate ligamnets">}}
 
-
+To add torsional stiffness to the joint additonal cruciat ligaments where used similar to the ones present in a human knee joint.
 
 ### Palm Design and Tendon Routing
 ![TendonRouting](./images/TendonRouting.png)
@@ -49,9 +49,8 @@ On the figure above you can see the tendon routing which enables two different a
 
 ### Wrist Mechanism: A Differential Approach
 
-![Overview of parts](./images/Wrist.png)
 
-
+{{<figure width="60%" src= "./images/Wrist.png" title="Overview of parts in the wrist">}}
 One of the project's highlights was the innovative wrist mechanism. Instead of assigning one motor for each DOF, we developed a differential wrist mechanism that connected both motors in the same power train. 
 
 
@@ -72,8 +71,7 @@ This design allowed for simultaneous and continuous power allocation to both DOF
 
 The stump interface, custom-fitted for the pilot, offered comfort and an additional passive rotational joint for ease of adjustment. This passive rotary mechanism allowed for easy, single-handed manipulation and provided a task-adaptable pronation/supination offset, significantly enhancing the pilot's comfort and the prosthesis's functionality.
 
-![Stump](./images/Stump.gif)
-
+{{<figure width="40%" src= "./images/Stump.gif" title="Manual Locking Mechanism for Supination and Pronation">}}
 A notable feature is the additional manual degree of freedom for the wrist. This improvement allows for heightened control and flexibility, enabling users to navigate their prosthetics with greater precision. In total, it introduces a 14-step rotation system with 25.7° increments. 
 A robust, tight locking mechanism is integrated to prevent unintended movements. This feature ensures stability during various activities, addressing concerns related to reliability and safety in daily use.
 

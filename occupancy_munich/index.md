@@ -8,7 +8,7 @@ Big brother is watching you
 {{<figure src= "bubble_chart.gif" title="Weekly overview of the occupancy of a facility">}}
 
 
-{{< link href="https://howfull.kiesgen.eu" content= "Website (Online)" >}}
+{{< link href="https://howfull.kiesgen.eu" content= "Website (No longer maintained) " >}}
 
 ## Introduction
 
