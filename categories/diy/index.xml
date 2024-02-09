@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>DIY - Category - My personal Blog</title>
+        <link>https://leonkie.github.io/categories/diy/</link>
+        <description>DIY - Category - My personal Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leon@kiesgen.eu (Leon Kie)</managingEditor>
+            <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster><lastBuildDate>Sat, 11 Jan 2020 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://leonkie.github.io/categories/diy/" rel="self" type="application/rss+xml" /><item>
+    <title>Building my custom Oak Hangboard</title>
+    <link>https://leonkie.github.io/hangboard/</link>
+    <pubDate>Sat, 11 Jan 2020 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/hangboard/</guid>
+    <description><![CDATA[For those who share a passion for climbing, a personalized hangboard is more than a training tool; I took on the challenge of creating a custom hangboard from the ground up, and here&rsquo;s how I turned oak wood leftovers into my dream hangboard and also a present for a friend.
+Choosing the Right Wood and Finger Pocket Layout The journey began with selecting the perfect wood. I sourced oak hardwood leftovers from a nearby sawmill, known for its strength and durability—essential qualities for a hangboard even when undergoing high intensity training sessions.]]></description>
+</item></channel>
+</rss>
