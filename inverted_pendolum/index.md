@@ -1,4 +1,4 @@
-# Inverted Pendulum
+# Inverted Pendulum, which is also a Lamp
 
 
 {{< youtube YQyPyLgG7x4 >}}
