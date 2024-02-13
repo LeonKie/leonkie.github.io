@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Rehabilitaion - Tag - My personal Blog</title>
+        <link>https://leonkie.github.io/tags/rehabilitaion/</link>
+        <description>Rehabilitaion - Tag - My personal Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leon@kiesgen.eu (Leon Kie)</managingEditor>
+            <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster><lastBuildDate>Mon, 01 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://leonkie.github.io/tags/rehabilitaion/" rel="self" type="application/rss+xml" /><item>
+    <title>Wearable Compact Shoulder Exoskeleton</title>
+    <link>https://leonkie.github.io/wearable_compact_shoulderexoskeletion/</link>
+    <pubDate>Mon, 01 May 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/wearable_compact_shoulderexoskeletion/</guid>
+    <description><![CDATA[In the realm of biomedical engineering, my Master&rsquo;s thesis at the Technical University of Munich&rsquo;s Institute of Micro Technology and Medical Device Technology (MiMed) introduces a novel approach to shoulder rehabilitation through the development of the Actuated Scissor Shoulder Mechanism Exoskeleton (ASSM-EXO). This project contributtes to the development in the field of mobile exoskeletions, focusing on the design and evaluation of a compact, wearable device intended to aid in the recovery of individuals experiencing shoulder mobility impairments, particularly following stroke-related hemiparesis.]]></description>
+</item></channel>
+</rss>

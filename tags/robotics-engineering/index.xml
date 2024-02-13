@@ -4,7 +4,14 @@
         <link>https://leonkie.github.io/tags/robotics-engineering/</link>
         <description>Robotics Engineering - Tag - My personal Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leon@kiesgen.eu (Leon Kie)</managingEditor>
-            <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster><lastBuildDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://leonkie.github.io/tags/robotics-engineering/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster><lastBuildDate>Mon, 01 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://leonkie.github.io/tags/robotics-engineering/" rel="self" type="application/rss+xml" /><item>
+    <title>Wearable Compact Shoulder Exoskeleton</title>
+    <link>https://leonkie.github.io/wearable_compact_shoulderexoskeletion/</link>
+    <pubDate>Mon, 01 May 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/wearable_compact_shoulderexoskeletion/</guid>
+    <description><![CDATA[In the realm of biomedical engineering, my Master&rsquo;s thesis at the Technical University of Munich&rsquo;s Institute of Micro Technology and Medical Device Technology (MiMed) introduces a novel approach to shoulder rehabilitation through the development of the Actuated Scissor Shoulder Mechanism Exoskeleton (ASSM-EXO). This project contributtes to the development in the field of mobile exoskeletions, focusing on the design and evaluation of a compact, wearable device intended to aid in the recovery of individuals experiencing shoulder mobility impairments, particularly following stroke-related hemiparesis.]]></description>
+</item><item>
     <title>Anthropomorphic Prosthesis for the Cybathlon Challenge</title>
     <link>https://leonkie.github.io/anthropomorphic_hand/</link>
     <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
