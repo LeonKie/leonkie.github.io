@@ -1,6 +1,8 @@
 # Wearable Compact Shoulder Exoskeleton
 
 
+{{< youtube 18ek6UZoXHE >}}
+
 In the realm of biomedical engineering, my Master's thesis at the Technical University of Munich's Institute of Micro Technology and Medical Device Technology (MiMed) introduces a novel approach to shoulder rehabilitation through the development of the **Actuated Scissor Shoulder Mechanism Exoskeleton (ASSM-EXO)**. This project contributtes to the development in the field of mobile exoskeletions, focusing on the design and evaluation of a compact, wearable device intended to aid in the recovery of individuals experiencing shoulder mobility impairments, particularly following stroke-related hemiparesis.
 
 {{<figure width="80%" src= "./images/Overview.png" title="Overview of the Shoulder Exoskeleton">}}
