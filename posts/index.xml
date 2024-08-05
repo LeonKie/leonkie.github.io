@@ -4,7 +4,14 @@
         <link>https://leonkie.github.io/posts/</link>
         <description>All Posts | My personal Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>leon@kiesgen.eu (Leon Kie)</managingEditor>
-            <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster><lastBuildDate>Mon, 01 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://leonkie.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>leon@kiesgen.eu (Leon Kie)</webMaster><lastBuildDate>Thu, 01 Aug 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://leonkie.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Reverse Engineering a Old Bus Display - Flipdot Lawo 28x16</title>
+    <link>https://leonkie.github.io/flip_dot_display/</link>
+    <pubDate>Thu, 01 Aug 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://leonkie.github.io/flip_dot_display/</guid>
+    <description><![CDATA[What is a Flipdot Display ? A flipdot display is a fascinating example of electromechanical display technology, often found on old buses as destination signs. These displays are valued for their retro aesthetics and functional reliability. Each dot in the display is a magnetic disc with one coloured side and one black side. The disc is flipped using an electromagnetic coil which holds the disc in place by magnetic polarisation.]]></description>
+</item><item>
     <title>Wearable Compact Shoulder Exoskeleton</title>
     <link>https://leonkie.github.io/wearable_compact_shoulderexoskeletion/</link>
     <pubDate>Mon, 01 May 2023 00:00:00 &#43;0000</pubDate>

@@ -2,14 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://leonkie.github.io/categories/</loc><lastmod>2023-05-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://leonkie.github.io/categories/</loc><lastmod>2024-08-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leonkie.github.io/</loc><lastmod>2024-08-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leonkie.github.io/posts/</loc><lastmod>2024-08-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leonkie.github.io/tags/retro-display/</loc><lastmod>2024-08-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leonkie.github.io/flip_dot_display/</loc><lastmod>2024-08-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leonkie.github.io/categories/robotics/</loc><lastmod>2024-08-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leonkie.github.io/tags/robotics-engineering/</loc><lastmod>2024-08-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://leonkie.github.io/tags/</loc><lastmod>2024-08-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://leonkie.github.io/categories/mechatronics/</loc><lastmod>2023-05-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://leonkie.github.io/</loc><lastmod>2023-05-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://leonkie.github.io/posts/</loc><lastmod>2023-05-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://leonkie.github.io/tags/rehabilitaion/</loc><lastmod>2023-05-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://leonkie.github.io/categories/robotics/</loc><lastmod>2023-05-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://leonkie.github.io/tags/robotics-engineering/</loc><lastmod>2023-05-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://leonkie.github.io/tags/</loc><lastmod>2023-05-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://leonkie.github.io/wearable_compact_shoulderexoskeletion/</loc><lastmod>2023-05-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://leonkie.github.io/anthropomorphic_hand/</loc><lastmod>2022-03-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://leonkie.github.io/tags/cybathlon/</loc><lastmod>2022-03-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

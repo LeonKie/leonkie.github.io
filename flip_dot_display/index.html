@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Reverse Engineering a Old Bus Display - Flipdot Lawo 28x16 - My personal Blog</title><meta name="Description" content="This is my perosonal Blog. Here you can find my personal interests"><meta property="og:title" content="Reverse Engineering a Old Bus Display - Flipdot Lawo 28x16" />
+<meta property="og:description" content="What is a Flipdot Display ? A flipdot display is a fascinating example of electromechanical display technology, often found on old buses as destination signs. These displays are valued for their retro aesthetics and functional reliability. Each dot in the display is a magnetic disc with one coloured side and one black side. The disc is flipped using an electromagnetic coil which holds the disc in place by magnetic polarisation." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://leonkie.github.io/flip_dot_display/" /><meta property="og:image" content="https://leonkie.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-08-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-08-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://leonkie.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Reverse Engineering a Old Bus Display - Flipdot Lawo 28x16"/>
+<meta name="twitter:description" content="What is a Flipdot Display ? A flipdot display is a fascinating example of electromechanical display technology, often found on old buses as destination signs. These displays are valued for their retro aesthetics and functional reliability. Each dot in the display is a magnetic disc with one coloured side and one black side. The disc is flipped using an electromagnetic coil which holds the disc in place by magnetic polarisation."/>
+<meta name="application-name" content="LeonKie">
+<meta name="apple-mobile-web-app-title" content="LeonKie"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://leonkie.github.io/flip_dot_display/" /><link rel="prev" href="https://leonkie.github.io/wearable_compact_shoulderexoskeletion/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Reverse Engineering a Old Bus Display - Flipdot Lawo 28x16",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/leonkie.github.io\/flip_dot_display\/"
+        },"genre": "posts","keywords": "Robotics Engineering, Retro Display","wordcount":  618 ,
+        "url": "https:\/\/leonkie.github.io\/flip_dot_display\/","datePublished": "2024-08-01T00:00:00+00:00","dateModified": "2024-08-01T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Leon Kie"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My personal Blog"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/projekt.png"
+        data-srcset="/images/projekt.png, /images/projekt.png 1.5x, /images/projekt.png 2x"
+        data-sizes="auto"
+        alt="/images/projekt.png"
+        title="/images/projekt.png" />My Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/info/about/"> About me </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My personal Blog"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/projekt.png"
+        data-srcset="/images/projekt.png, /images/projekt.png 1.5x, /images/projekt.png 2x"
+        data-sizes="auto"
+        alt="/images/projekt.png"
+        title="/images/projekt.png" />My Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/info/about/" title="">About me</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Reverse Engineering a Old Bus Display - Flipdot Lawo 28x16</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Leon Kie</a></span>&nbsp;<span class="post-category">included in <a href="/categories/robotics/"><i class="far fa-folder fa-fw"></i>Robotics</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-08-01">2024-08-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;618 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-a-flipdot-display-">What is a Flipdot Display ?</a></li>
+    <li><a href="#final-design">Final Design</a></li>
+    <li><a href="#development-of-a-new-controller-board">Development of a new controller board</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/FlipDotBanner.jpg"
+        data-srcset="/flip_dot_display/images/FlipDotBanner.jpg, images/FlipDotBanner.jpg 1.5x, /flip_dot_display/images/FlipDotBanner.jpg 2x"
+        data-sizes="auto"
+        alt="/flip_dot_display/images/FlipDotBanner.jpg"
+        title="FlipdotBanner" /></p>
+<h2 id="what-is-a-flipdot-display-">What is a Flipdot Display ?</h2>
+<p>A flipdot display is a fascinating example of electromechanical display technology, often found on old buses as destination signs. These displays are valued for their retro aesthetics and functional reliability. Each dot in the display is a magnetic disc with one coloured side and one black side. The disc is flipped using an electromagnetic coil which holds the disc in place by magnetic polarisation. This unique operation allows the display to consume power only when changing states, making it highly energy efficient at around 2Wh compared to modern displays that consume around 20-40Wh.</p>
+<p>Originally, these displays were controlled by hardware-specific controllers that could only show pre-defined street names or animations. The controller I got from a bus display was no exception and proved unsuitable for my needs. I wanted to create a more versatile solution to control the display, allowing dynamic content such as time, weather and other data downloaded from the internet.</p>
+<h2 id="final-design">Final Design</h2>
+<p>Here is an overview of the final design, which now sits on my shelf.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/Overview.png"
+        data-srcset="/flip_dot_display/images/Overview.png, images/Overview.png 1.5x, /flip_dot_display/images/Overview.png 2x"
+        data-sizes="auto"
+        alt="/flip_dot_display/images/Overview.png"
+        title="FlipdotOverview" /></p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Components<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>📺 Retro FlipDot Display</li>
+<li>📟 Custom Row and Column Driver Board (PCB)</li>
+<li>💻 Arduino Nano Microcontroller</li>
+<li>🛜 Arduino ESP32 with Wifi</li>
+<li>⚡ Power Supply</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h2 id="development-of-a-new-controller-board">Development of a new controller board</h2>
+<p>The main objective was to design and implement a custom controller board for the Flipdot display. This new board would need to drive the 24V operations of the display while interfacing with a microcontroller that supported Wi-Fi. The controller board would handle the complex task of correctly flipping the dots based on the input signals, translating data from the Internet into visible content.</p>
+<p>A key objective of the project was to reverse engineer the display architecture. This means understanding the existing PCB schematic, ICs and pin layout of the Fipdot display. But it also meant developing an efficient control layout capable of driving the correct pin with the correct voltage in microseconds. Sounds easy! Probably only for people who study electronics. But even then, modern technologies do not work at the voltage levels required for the project. Each coil of the flipdot is driven by a 100 microsecond pulse of 24V. To flip the same dot back and forth, you have to change the polarity and drive the coil from the other side. This can lead to problems, of course, as flipping at high speed can lead to high voltage short circuits.</p>
+<p>I found a schematic on github ( <a href="https://github.com/RobsyRocket/Lawo-28x16-Flip-Dot-Matrix-with-LED" target="_blank" rel="noopener noreffer">https://github.com/RobsyRocket/Lawo-28x16-Flip-Dot-Matrix-with-LED</a> ).
+After understanding the pin layout of my Lawo flip dot matrix, I could do some small tests using a breadboard setup. However, this turned out to be very difficult as I could not flip a single one, only one row at a time.</p>
+<p>The first real prototype was more ambitious, with 16 low-side and high-side lines wired. This was completely designed using a custom perfboard as shown in the following images.</p>
+<p><a class="lightgallery" href="./images/FirstPrototypeColumRowDriver.jpg" title="FirstPrototypeColumRowDriver" data-thumbnail="./images/FirstPrototypeColumRowDriver.jpg">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="./images/FirstPrototypeColumRowDriver.jpg"
+            data-srcset="./images/FirstPrototypeColumRowDriver.jpg, ./images/FirstPrototypeColumRowDriver.jpg 1.5x, ./images/FirstPrototypeColumRowDriver.jpg 2x"
+            data-sizes="auto"
+            alt="./images/FirstPrototypeColumRowDriver.jpg" width="49%" />
+    </a>
+<a class="lightgallery" href="./images/FirstPrototypeColumRowDriverBack.jpg" title="FirstPrototypeColumRowDriver" data-thumbnail="./images/FirstPrototypeColumRowDriverBack.jpg">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="./images/FirstPrototypeColumRowDriverBack.jpg"
+            data-srcset="./images/FirstPrototypeColumRowDriverBack.jpg, ./images/FirstPrototypeColumRowDriverBack.jpg 1.5x, ./images/FirstPrototypeColumRowDriverBack.jpg 2x"
+            data-sizes="auto"
+            alt="./images/FirstPrototypeColumRowDriverBack.jpg" width="49%" />
+    </a></p>
+<p>It contained four <code>74hc595</code> shift registers connected to either <code>UDN 2981</code> 8 channel high voltage source driver (-500 mA, DIL-18) or <code>ULN 2003 AN</code> seven Darlington arrays.</p>
+<p>After several tests with the display, a major problem with the perfboard was that it was very difficult to add pull-down resistors to each of the shift register outputs. I therefore decided to design a similar circuit on a custom board, including debugging facilities such as decoupling the power supply or adding a fast fuse and board resistor.</p>
+<p>The following schematic shows the final design used in my prototype.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="images/Schematic.png"
+        data-srcset="/flip_dot_display/images/Schematic.png, images/Schematic.png 1.5x, /flip_dot_display/images/Schematic.png 2x"
+        data-sizes="auto"
+        alt="/flip_dot_display/images/Schematic.png"
+        title="FlipdotBanner" /></p>
+<p>It shows the connections to the RX and TX lines of the Arduino, but not the level shifter to the ESP32, as this was decided later in the design process.</p>
+<p>The following images show the front of the PCB in both 2D and 3D.
+<a class="lightgallery" href="./images/PCB_2D.png" title="PCB 2D" data-thumbnail="./images/PCB_2D.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="./images/PCB_2D.png"
+            data-srcset="./images/PCB_2D.png, ./images/PCB_2D.png 1.5x, ./images/PCB_2D.png 2x"
+            data-sizes="auto"
+            alt="./images/PCB_2D.png" width="49%" />
+    </a>
+<a class="lightgallery" href="./images/PCB_3D.png" title="PCB 3D" data-thumbnail="./images/PCB_3D.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="./images/PCB_3D.png"
+            data-srcset="./images/PCB_3D.png, ./images/PCB_3D.png 1.5x, ./images/PCB_3D.png 2x"
+            data-sizes="auto"
+            alt="./images/PCB_3D.png" width="49%" />
+    </a></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube-nocookie.com/embed/PiH5vOq1IlQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<hr>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-08-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/flip_dot_display/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://leonkie.github.io/flip_dot_display/" data-title="Reverse Engineering a Old Bus Display - Flipdot Lawo 28x16" data-via="leon__kie" data-hashtags="Robotics Engineering,Retro Display"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://leonkie.github.io/flip_dot_display/" data-title="Reverse Engineering a Old Bus Display - Flipdot Lawo 28x16"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/robotics-engineering/">Robotics Engineering</a>,&nbsp;<a href="/tags/retro-display/">Retro Display</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/wearable_compact_shoulderexoskeletion/" class="prev" rel="prev" title="Wearable Compact Shoulder Exoskeleton"><i class="fas fa-angle-left fa-fw"></i>Wearable Compact Shoulder Exoskeleton</a></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.114.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Leon Kie</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/gitalk/gitalk.min.js"></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"gitalk":{"admin":["LeonKie"],"clientID":"31581f525dd74914baac","clientSecret":"faf66524b0ed66814e24ce9a711e42f39098bc52","id":"2024-08-01T00:00:00Z","owner":"LeonKie","repo":"BlogComments","title":"Reverse Engineering a Old Bus Display - Flipdot Lawo 28x16"}},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"$$","right":"$$"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"},{"display":false,"left":"$","right":"$"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
